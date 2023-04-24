@@ -1,0 +1,15 @@
+.Section01 {
+    border-bottom: 1px solid lightgray;
+}
+
+.Section02 {
+    border-bottom: 3px double lightgray;
+}
+
+.Section03 {
+    border-bottom: 1px solid lightgray;
+}
+
+.section05 {
+    border-top: 3px double lightgrey;
+}

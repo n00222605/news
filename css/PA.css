@@ -1,0 +1,34 @@
+.PABig {
+    text-align: center;
+}
+
+.PABig .image {
+    margin-bottom: 20px;
+}
+
+.PABig h1 {
+    font-size: 30px;
+}
+
+.PABig h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.PAMedium {
+    margin-bottom: 20px;
+}
+
+.PAMedium img {
+    margin-bottom: 5px;
+}
+
+.PAMedium h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.PAMedium p {
+    font-size: 14px;
+    color: gray;
+}

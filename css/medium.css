@@ -1,0 +1,27 @@
+.Medium {
+    display: flex;
+}
+
+.Medium img {
+    margin-bottom: 10px;
+    height: 180px;
+    width: 379px;
+}
+
+.Medium .image {
+    justify-content: center;
+}
+
+.Medium h2, p {
+    font-size: 14px;
+    color: gray;
+}
+
+.Medium h2 {
+    margin-bottom: 10px;
+}
+
+.Medium h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}

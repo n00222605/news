@@ -1,0 +1,25 @@
+header {
+    background-color: #0B0B45;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 45px;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    font-size: 20px;
+    margin-right: 30px;
+}

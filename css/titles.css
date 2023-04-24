@@ -1,0 +1,9 @@
+.Title .header h1 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.Title {
+    border-top: 1px solid lightgray;
+    border-bottom: 4px double lightgray;
+}

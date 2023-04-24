@@ -1,0 +1,29 @@
+.Big {
+    text-align: center;
+    padding-bottom: 21px;
+    border-right: 1px solid lightgray;
+    padding-right: 30px;
+}
+
+.Big img {
+    height: 547px;
+    width: 890px;
+    margin-bottom: 35px;
+}
+
+.Big h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: medium 100;
+}
+
+.Big h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.Big p {
+    font-size: 12px;
+    color: gray;
+}

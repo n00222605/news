@@ -1,0 +1,36 @@
+.Small h1 {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    font-weight: medium 100; 
+} 
+
+.Small p { 
+    font-size: 11px; 
+    color: gray; 
+} 
+
+.Small .text { 
+    margin-right: 10px; 
+    margin-bottom: 40px;
+} 
+
+.Small img { 
+    display: flex; 
+}
+
+.small1, .small2, .small3, .small4 {
+    padding-bottom: 31px;
+    border-bottom: 1px solid lightgray;
+}
+
+.small2, .small3, .small4, .small5 {
+    padding-top: 31px;
+}
+
+.small1, .small2, .small3, .small4 {
+    padding-bottom: 5px;
+}
+
+.small1, .small2, .small3, .small4, .small5 {
+    display: flex;
+}
