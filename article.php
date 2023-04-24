@@ -57,7 +57,7 @@ catch (Exception $ex) {
     <header>
         <div class="container">
             <div class="width-2">
-                <h1>The News</h1>
+                <h1><a href="index.php">The News</a></h1>
             </div>
             <div class="categories">
                 <div class="width-10">
