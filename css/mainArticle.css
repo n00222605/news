@@ -1,0 +1,54 @@
+.mainArticle .title h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mainArticle .title h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mainArticle p {
+    color: black;
+}
+
+.mainArticle h3 {
+    font-size: 15px;
+    color: rgb(77, 77, 77);
+}
+
+.mainArticle h4 {
+    font-size: 12px;
+    color: rgb(77, 77, 77);
+}
+
+.mainArticle .article img {
+    width:892px;
+    height:500px;
+}
+
+.mainArticle .articleText {
+    margin-bottom: 30px;
+}
+
+.mainArticle .image {
+    margin-bottom: 40px;
+}
+
+.MAmedium {
+    margin-bottom: 20px
+}
+
+.MAmedium img {
+    margin-bottom: 5px;
+}
+
+.MAmedium h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.MAmedium p {
+    font-size: 14px;
+    color: gray;
+}

@@ -1,0 +1,25 @@
+.footer {
+    background-color: #0B0B45;;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer li {
+    font-size: 20px;
+    margin-right: 30px;
+}

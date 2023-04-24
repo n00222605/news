@@ -4,6 +4,8 @@
 <?php
 require_once "./etc/config.php";
 
+$PAmedium2 = Story::findAllLimit(5, 0);
+
 try{
 
     if ($_SERVER["REQUEST_METHOD"] !== "GET") {
@@ -30,9 +32,7 @@ catch (Exception $ex) {
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -53,27 +53,87 @@ catch (Exception $ex) {
 </head>
 
 <body>
+
+    <header>
+        <div class="container">
+            <div class="width-2">
+                <h1>The News</h1>
+            </div>
+            <div class="categories">
+                <div class="width-10">
+                    <ul>
+                        <li><a href="#">Sport</a></li>
+					    <li><a href="#">Science</a></li>
+					    <li><a href="#">Fashion</a></li>
+					    <li><a href="#">Crime</a></li>
+					    <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="mainArticle">
         <div class="container">
-            <div class="width-12">
-                <div class="title">
-                    <h1><?= $story->heading; ?></h1>
+            <div class="width-9">
+                <div class="article">
+                    <div class="title">
+                        <h1><?= $story->heading; ?></h1>
+                        <h2><?= $story->sub_heading; ?></h2>
+                    </div>
+
+                    <div class="image">
+                        <img src="<?= $story->image;?>"/>
+                    </div>
+
+                    <div class="articleText">
+                        <p><?=$story->article?></p>
+                    </div>
+
+                    <div class="authorTime">
+                        <div class="author">
+                            <h3>By <?= $story->author; ?></h3>
+                        </div>
+                        <div class="time">
+                            <h4 style="margin-right: 7px;"><?=$story->publish_date?> at <?=$story->publish_time?></h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="bigImage">
-                    <img src="<?= $story->image;?>" />
+            </div>
+
+            
+            <div class="width-3">
+            <div class="medTitle">
+                <h1>Popular Stories</h1>
+            </div>
+            <?php 
+            foreach($PAmedium2 as $story) { ?>
+                <div class="MAmedium">
+                    <a href="article.php?id=<?= $story->id ?>">
+                        <div class="image"><img src="<?= $story->image; ?>" /></div>
+                        <div class="text">
+                            <h1>
+                                <?= $story->heading; ?>
+                            </h1>
+                            <p>By <?= $story->author; ?></p>
+                        </div>
+                    </a>
                 </div>
-                <div class="authorTime">
-                    <div class="author">
-                    <h4>By <?= $story->author; ?></h4>
-                </div>
-                <div class="time">
-                    <h4 style="margin-right: 7px;"><?=$story->publish_date?></h4>
-                    <h4><?=$story->publish_time?></h4>
-                </div>
-                <div class="articleText">
-                    <p><?=$story->article?></p>
-                </div>
-                </div>
+            <?php } ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="width-12">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>

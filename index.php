@@ -285,10 +285,19 @@ $medium3Stories = Story::findAllLimit(3, 12);
         </div> 
     </div>
 
-    <!--footer-->
     <div class="footer">
+        <div class="width-12">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+		            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
