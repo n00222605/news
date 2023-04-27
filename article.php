@@ -4,7 +4,7 @@
 <?php
 require_once "./etc/config.php";
 
-$PAmedium2 = Story::findAllLimit(5, 0);
+$PAmedium2 = Story::findAllLimit(5, rand(0, 15));
 
 try{
 

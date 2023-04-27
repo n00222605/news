@@ -11,6 +11,6 @@ h2, p {
 }
 
 a h1:hover {
-    color:rgb(33, 33, 33);
+    color:rgb(105, 105, 105);
     transition: 0.2s;
 }
