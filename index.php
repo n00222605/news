@@ -207,11 +207,11 @@ $medium3Stories = Story::findAllLimit(3, 12);
             <?php $category = Category::findById($story->category_id); ?>
             <div class="width-6">
                 <div class="PABig">
-                <a href="article.php?id=<?= $story->id ?>">
-                    <h1><?= $story->heading; ?></h1>
-                    <div class="image"><img src="<?= $story->image; ?>" /></div>
-                    <h2><?= $story->sub_heading; ?></h2>
-                </a>
+                    <a href="article.php?id=<?= $story->id ?>">
+                        <h1><?= $story->heading; ?></h1>
+                        <div class="image"><img src="<?= $story->image; ?>" /></div>
+                        <h2><?= $story->sub_heading; ?></h2>
+                    </a>
                 </div>
             </div>
             <?php } ?>
